@@ -1,0 +1,55 @@
+@media (max-width:60em) {
+    h1 {
+        display: none;
+    }
+
+    .app-container {
+        height: 100%;
+    
+        margin-top: 0;
+    
+        border-radius: 0;
+    }
+
+    .app-item {
+        height: 100%;
+
+        justify-content: flex-start;
+
+        padding-top: 5rem;
+    }
+
+    .app-content {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .input-container {
+        flex-direction: column;
+        
+    }
+
+    .input-item:last-child {
+        padding-left: 1rem;
+    }
+
+    label {
+        display: none;
+    }
+
+    input {
+        padding: 1.5rem 0 .5rem 1rem;
+        width: 90%;
+    }
+
+    button {
+        margin-top: 3rem;
+        width: 10rem;
+    }
+
+    .result {
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    
+}

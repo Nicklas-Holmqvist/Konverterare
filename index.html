@@ -20,16 +20,16 @@
             <h1 class="text-align">Omkrets: och Area:</h1>
             <div class="app-container height width">                
                 <div class="app-header flex row">
-                    <div class="header-item header-one" id="header-1">
+                    <div class="header-item header-one" id="header-1" onclick="blue()">
                         Kvadrat
                     </div>
-                    <div class="header-item header-two" id="header-2">
+                    <div class="header-item header-two" id="header-2" onclick="green()">
                         Rektangel
                     </div>
-                    <div class="header-item header-three" id="header-3">
+                    <div class="header-item header-three" id="header-3" onclick="yellow()">
                         Triangel
                     </div>
-                    <div class="header-item  header-four" id="header-4">
+                    <div class="header-item  header-four" id="header-4" onclick="pink()">
                         Cirkel
                     </div>                    
                 </div>
@@ -37,102 +37,108 @@
                     <div class="app-content">
                         <h2>Kvadrat</h2>
                         <p>Lite text om kvadrater</p>
-                        <div class="input-container">
-                            <div class="input-item">
-                                <label for="item1-nr1">B</label>
-                                <input type="tel" id="item1-nr1" placeholder="Basen">
+                        <div class="input-container flex column">
+                            <div class="input-items flex row">
+                                <div class="input-item">
+                                    <label for="item1-nr1">B</label>
+                                    <input type="tel" id="item1-nr1" placeholder="Basen">
+                                </div>
+                                <div class="input-item">
+                                    <label for="item1-nr2">H</label>
+                                    <input type="tel" id="item1-nr2" placeholder="Höjden">
+                                </div>
                             </div>
-                            <div class="input-item">
-                                <label for="item1-nr2">H</label>
-                                <input type="tel" id="item1-nr2" placeholder="Höjden">
-                            </div>
-                            <button id="btnItem-1">Beräkna</button>
+                            <button id="btnItem-1" onclick="kvadrat()">Beräkna</button>
                         </div>
                         <div class="result flex row">
                             <h3>Omkrets:</h3>
-                            <h3 id="item1-1">Värde</h3>
+                            <h3 id="item1-1"></h3>
                         </div>
                         <div class="result flex row">
                             <h3>Area:</h3>
-                            <h3 id="item1-2">Värde</h3>
+                            <h3 id="item1-2"></h3>
                         </div>
                     </div>
                 </div>
                 <div class="app-item app-item-2" id="item-2">
-                    <div class="app-content"></div>
+                    <div class="app-content">
                         <h2>Rektangel</h2>
                         <p>Lite text om rektanglar</p>
-                        <div class="input-container">
-                            <div class="input-item">
-                                <label for="item2-nr1">B</label>
-                                <input type="tel" id="item2-nr1" placeholder="Basen">
+                        <div class="input-container flex column">
+                            <div class="input-items flex row">
+                                <div class="input-item">
+                                    <label for="item2-nr1">B</label>
+                                    <input type="tel" id="item2-nr1" placeholder="Basen">
+                                </div>
+                                <div class="input-item">
+                                    <label for="item2-nr2">H</label>
+                                    <input type="tel" id="item2-nr2" placeholder="Höjden">
+                                </div>
                             </div>
-                            <div class="input-item">
-                                <label for="item2-nr2">H</label>
-                                <input type="tel" id="item2-nr2" placeholder="Höjden">
-                            </div>
-                            <button id="btnItem-2">Beräkna</button>
+                            <button id="btnItem-2" onclick="rektangel()">Beräkna</button>
                         </div>
                         <div class="result flex row">
                             <h3>Omkrets:</h3>
-                            <h3 id="item2-1">Värde</h3>
+                            <h3 id="item2-1"></h3>
                         </div>
                         <div class="result flex row">
                             <h3>Area:</h3>
-                            <h3 id="item2-2">Värde</h3>
+                            <h3 id="item2-2"></h3>
                         </div>
                     </div>
-                </div>
+                </div>    
                 <div class="app-item app-item-3" id="item-3">
-                    <div class="app-content"></div>
+                    <div class="app-content">
                         <h2>Trianglar</h2>
                         <p>Lite text om tringlar</p>
-                        <div class="input-container flex row">
-                            <div class="input-item">
-                                <label for="item3-nr1">B</label>
-                                <input type="tel" id="item3-nr1" placeholder="Basen">
+                        <div class="input-container flex column">
+                            <div class="input-items flex row">
+                                <div class="input-item">
+                                    <label for="item3-nr1">B</label>
+                                    <input type="tel" id="item3-nr1" placeholder="Basen">
+                                </div>
+                                <div class="input-item">
+                                    <label for="item3-nr2">H</label>
+                                    <input type="tel" id="item3-nr2" placeholder="Höjden">
+                                </div>
                             </div>
-                            <div class="input-item">
-                                <label for="item3-nr2">H</label>
-                                <input type="tel" id="item3-nr2" placeholder="Höjden">
-                            </div>
-                            <button id="btnItem-3">Beräkna</button>
+                            <button id="btnItem-3" onclick="triangel()">Beräkna</button>
                         </div>
                         <div class="result flex row">
                             <h3>Omkrets:</h3>
-                            <h3 id="item3-1">Värde</h3>
+                            <h3 id="item3-1"></h3>
                         </div>
                         <div class="result flex row">
                             <h3>Area:</h3>
-                            <h3 id="item3-2">Värde</h3>
+                            <h3 id="item3-2"></h3>
                         </div>
                     </div>
-                </div>
+                </div>  
                 <div class="app-item app-item-4" id="item-4"> 
                     <div class="app-content">
                         <h2>Cirklar</h2>
                         <p>Lite text om cirklar</p>
-                        <div class="input-container flex row">
-                            <div class="input-item">
-                                <label for="item4-nr1">B</label>
-                                <input type="tel" id="item4-nr1" placeholder="Radien">
-                            </div>                
-                            <button id="btnItem-4">Beräkna</button>
+                        <div class="input-container flex column">
+                            <div class="input-items flex row">
+                                <div class="input-item">
+                                    <label for="item4-nr1">B</label>
+                                    <input type="tel" id="item4-nr1" placeholder="Diameter">
+                                </div>
+                            </div>
+                            <button id="btnItem-4" onclick="cirkel()">Beräkna</button>
                         </div>
                         <div class="result flex row">
                             <h3>Omkrets:</h3>
-                            <h3 id="item4-1">Värde</h3>
+                            <h3 id="item4-1"></h3>
                         </div>
                         <div class="result flex row">
                             <h3>Area:</h3>
-                            <h3 id="item4-2">Värde</h3>
+                            <h3 id="item4-2"></h3>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
     <footer>
 

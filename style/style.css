@@ -64,7 +64,7 @@ p {
 }
 
 .header-one, .app-item-1 {
-    background: blue;    
+    background: rgb(156, 156, 255);    
 }
 
 .header-two, .app-item-2 {
@@ -73,12 +73,17 @@ p {
 }
 
 .header-three, .app-item-3 {
-    background: yellow;
+    background: rgb(241, 241, 115);
+    color: rgb(51, 51, 51)!important;
 
 }
 
 .header-four, .app-item-4 {
     background: pink;
+}
+
+body {
+    transition: all .5s ease;
 }
 
 main {
@@ -110,11 +115,16 @@ main {
 
     color: rgb(250, 250, 250);
 
-    border-bottom: .5px rgb(255, 255, 255) solid;
+    /* border-bottom: 2px rgb(255, 255, 255) solid; */
 }
 
 .header-one {
     border-bottom: none;
+}
+
+.btn-header {
+    width: 100%;
+    height: 100%;
 }
 
 .app-item {
@@ -127,10 +137,12 @@ main {
     align-items: center;
 
     color: rgb(250, 250, 250);
+
+    transition: all .5s ease;
 }
 
 .app-content {
-    width: 50%;
+    width: 40%;
 }
 
 .input-container {
@@ -148,38 +160,31 @@ main {
 
 label {
     padding-right: 1rem;
+    display: none;
 }
 
 input {
     padding: 1rem 0 .5rem 1rem;
-    width: 75%;
+    width: 90%;
 
     border-radius: 4px;
+
+    outline: none;
 }
 
 button {
     padding: 1rem 2rem;
 
     border-radius: 4px;
+
+    outline: none;
 }
 
 .result {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .result h3:first-child {
     padding-right: 2rem;
-}
-
-.app-item-2 {
-    display: none;    
-}
-
-.app-item-3 {
-    display: none;    
-}
-
-.app-item-4 {
-    display: none;    
 }
 
