@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="height">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,71 +8,125 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/mobile.css">
 
+     <!-- Google Fonts -->
+
+     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+
     <title>Omkrets och Area | Nicklas Holmqvist</title>
 </head>
-<body>
-    <header>
-        <h1>Omkrets och Area</h1>
-    </header>
-    <main>
-        <div class="app-section">
-            <div class="app-container">
-                <div class="app-header">
-                    <div class="header-item" id="header-1"></div>
-                    <div class="header-item" id="header-2"></div>
-                    <div class="header-item" id="header-3"></div>
-                    <div class="header-item" id="header-4"></div>                    
+<body class="height">
+    <main class="height width">
+        <div class="height app-section margin max-width flex center column">
+            <h1 class="text-align">Omkrets och Area</h1>
+            <div class="app-container height width">                
+                <div class="app-header flex row">
+                    <div class="header-item header-one" id="header-1">
+                        Kvadrat
+                    </div>
+                    <div class="header-item header-two" id="header-2">
+                        Rektangel
+                    </div>
+                    <div class="header-item header-three" id="header-3">
+                        Triangel
+                    </div>
+                    <div class="header-item  header-four" id="header-4">
+                        Cirkel
+                    </div>                    
                 </div>
-                <div class="app-item" id="item-1">
-                    <h2></h2>
-                    <p></p>
-                    <input type="text"><input type="text">
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="app-item" id="item-2">
-                    <h2></h2>
-                    <p></p>
-                    <input type="text"><input type="text">
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                </div>
-                <div class="app-item" id="item-3">
-                    <h2></h2>
-                    <p></p>
-                    <input type="text"><input type="text">
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
-                    </div>
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
+                <div class="app-item app-item-1" id="item-1">
+                    <div class="app-content">
+                        <h2>Kvadrat</h2>
+                        <p>Lite text om kvadrater</p>
+                        <div class="input-container">
+                            <div class="input-item">
+                                <label for="item1-nr1">B</label>
+                                <input type="tel" id="item1-nr1" placeholder="Basen">
+                            </div>
+                            <div class="input-item">
+                                <label for="item1-nr2">H</label>
+                                <input type="tel" id="item1-nr2" placeholder="Höjden">
+                            </div>
+                            <button id="btnItem-1">Beräkna</button>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Omkrets</h3>
+                            <h3 id="item1-1">Värde</h3>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Area</h3>
+                            <h3 id="item1-2">Värde</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="app-item" id="item-4"> 
-                    <h2></h2>
-                    <p></p>
-                    <input type="text"><input type="text">
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
+                <div class="app-item app-item-2" id="item-2">
+                    <div class="app-content"></div>
+                        <h2>Rektangel</h2>
+                        <p>Lite text om rektanglar</p>
+                        <div class="input-container">
+                            <div class="input-item">
+                                <label for="item2-nr1">B</label>
+                                <input type="tel" id="item2-nr1" placeholder="Basen">
+                            </div>
+                            <div class="input-item">
+                                <label for="item2-nr2">H</label>
+                                <input type="tel" id="item2-nr2" placeholder="Höjden">
+                            </div>
+                            <button id="btnItem-2">Beräkna</button>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Omkrets</h3>
+                            <h3 id="item2-1">Värde</h3>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Area</h3>
+                            <h3 id="item2-2">Värde</h3>
+                        </div>
                     </div>
-                    <div class="result">
-                        <h3></h3>
-                        <h3></h3>
+                </div>
+                <div class="app-item app-item-3" id="item-3">
+                    <div class="app-content"></div>
+                        <h2>Trianglar</h2>
+                        <p>Lite text om tringlar</p>
+                        <div class="input-container flex row">
+                            <div class="input-item">
+                                <label for="item3-nr1">B</label>
+                                <input type="tel" id="item3-nr1" placeholder="Basen">
+                            </div>
+                            <div class="input-item">
+                                <label for="item3-nr2">H</label>
+                                <input type="tel" id="item3-nr2" placeholder="Höjden">
+                            </div>
+                            <button id="btnItem-3">Beräkna</button>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Omkrets</h3>
+                            <h3 id="item3-1">Värde</h3>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Area</h3>
+                            <h3 id="item3-2">Värde</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-item app-item-4" id="item-4"> 
+                    <div class="app-content">
+                        <h2>Cirklar</h2>
+                        <p>Lite text om cirklar</p>
+                        <div class="input-container flex row">
+                            <div class="input-item">
+                                <label for="item4-nr1">B</label>
+                                <input type="tel" id="item4-nr1" placeholder="Radien">
+                            </div>                
+                            <button id="btnItem-4">Beräkna</button>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Omkrets</h3>
+                            <h3 id="item4-1">Värde</h3>
+                        </div>
+                        <div class="result flex row">
+                            <h3>Area</h3>
+                            <h3 id="item4-2">Värde</h3>
+                        </div>
                     </div>
                 </div>
             </div>
