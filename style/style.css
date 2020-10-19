@@ -94,13 +94,19 @@ main {
 
 .app-container {
     height: 35rem;
+
+    margin-top: 2rem;
+
     border-radius: 15px;
+    
     overflow: hidden;
 }
 
 .header-item {
     width: 100%;
     padding: 2rem 0;
+
+    text-align: center;
 
     color: rgb(250, 250, 250);
 
@@ -132,6 +138,7 @@ main {
     flex-direction: row;
 
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 2rem;
 }
 
@@ -146,10 +153,22 @@ label {
 input {
     padding: 1rem 0 .5rem 1rem;
     width: 75%;
+
+    border-radius: 4px;
+}
+
+button {
+    padding: 1rem 2rem;
+
+    border-radius: 4px;
 }
 
 .result {
     padding-top: 2rem;
+}
+
+.result h3:first-child {
+    padding-right: 2rem;
 }
 
 .app-item-2 {
