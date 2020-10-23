@@ -63,8 +63,13 @@ p {
     padding-bottom: 4rem;
 }
 
+a {
+    color: #011627;
+    padding-left: .3rem;
+}
+
 .header-one, .app-item-1 {
-    background: rgb(156, 156, 255);    
+    background: rgb(121, 166, 250);    
 }
 
 .header-two, .app-item-2 {
@@ -186,5 +191,22 @@ button {
 
 .result h3:first-child {
     padding-right: 2rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+
+span {
+    text-shadow: none;
+}
+
+.fa-envelope {
+    text-shadow: none;
 }
 

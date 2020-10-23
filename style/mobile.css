@@ -3,6 +3,11 @@
         display: none;
     }
 
+    .header-item {
+        padding: 3rem 0;
+    }
+    
+
     .app-container {
         height: 100%;
     
@@ -16,7 +21,7 @@
 
         justify-content: flex-start;
 
-        padding-top: 5rem;
+        padding-top: 8rem;
     }
 
     .app-content {

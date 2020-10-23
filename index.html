@@ -12,6 +12,17 @@
 
      <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
 
+    <!-- Favicon -->
+     <link rel="shortcut icon" type="image/png" href="./favicon-32x32.png"/>
+     <link rel="shortcut icon" type="image/ico" href="http://nicklasholmqvist.se/portfolio/omkrets-area/favicon.ico"/>
+
+    <!-- Fontawsome -->
+
+    <script src="https://kit.fontawesome.com/e5bc88f7ae.js" crossorigin="anonymous"></script>
+
+    <!-- Icon -->
+    <!-- https://www.iconfinder.com/icons/2674070/web_object_ui_essential_area_icon -->
+
     <title>Omkrets: och Area: | Nicklas Holmqvist</title>
 </head>
 <body class="height">
@@ -41,11 +52,11 @@
                             <div class="input-items flex row">
                                 <div class="input-item">
                                     <label for="item1-nr1">B</label>
-                                    <input type="tel" id="item1-nr1" placeholder="Basen">
+                                    <input type="tel" id="item1-nr1" placeholder="Basen" maxlength="3" pattern="/[^0-9.]/g">
                                 </div>
                                 <div class="input-item">
                                     <label for="item1-nr2">H</label>
-                                    <input type="tel" id="item1-nr2" placeholder="Höjden">
+                                    <input type="tel" id="item1-nr2" placeholder="Höjden" maxlength="3" pattern="/[^0-9.]/g">
                                 </div>
                             </div>
                             <button id="btnItem-1" onclick="kvadrat()">Beräkna</button>
@@ -141,7 +152,8 @@
         </div>
     </main>
     <footer>
-
+        <span>Skapad av: Nicklas Holmqvist</span>
+        <a href="mailto:nicklas_holmqvist@outlook.com"><i class="far fa-envelope"></i></a>
     </footer>
     <script src="./style/app.js"></script>
 </body>

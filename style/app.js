@@ -60,14 +60,20 @@ function rektangel() {
     const resetNr2 = document.getElementById('item2-nr2').value = '';
 }
 
-function tringel() {
-    const omkrets = ((Number(document.getElementById('item3-nr1').value) * 2) + (Number(document.getElementById('item3-nr2').value) * 2));
+function triangel() {
+    const omkretsPre = ((Number(document.getElementById('item3-nr1').value) * 2) + (Number(document.getElementById('item3-nr2').value) * 2));
+    const roten = Math.round((Math.sqrt(omkretsPre)) * 10) /10;
+    console.log(roten);
+
+    const omkrets = Number(document.getElementById('item3-nr1').value) + Number(document.getElementById('item3-nr2').value) + roten;
     console.log(omkrets);
     
     const area = Number(document.getElementById('item3-nr1').value) * Number(document.getElementById('item3-nr2').value);
     console.log(area);
 
-    const sumOmkrets = document.getElementById('item3-1').innerText = Math.sqrt(omkrets);
+    
+
+    const sumOmkrets = document.getElementById('item3-1').innerText = omkrets;
     const sumArea = document.getElementById('item3-2').innerText = area;
 
     const resetNr1 = document.getElementById('item3-nr1').value = '';
@@ -81,8 +87,8 @@ function cirkel() {
     const area = Number(document.getElementById('item4-nr1').value)  * (Math.PI);
     console.log(area);
 
-    const sumOmkrets = document.getElementById('item4-1').innerText = Math.round(Number(omkrets));
-    const sumArea = document.getElementById('item4-2').innerText = Math.round(Number(area));
+    const sumOmkrets = document.getElementById('item4-1').innerText = Math.round(Number(omkrets) *10) /10;
+    const sumArea = document.getElementById('item4-2').innerText = Math.round(Number(area) * 10) /10;
 
     const resetNr1 = document.getElementById('item4-nr1').value = '';
     const resetNr2 = document.getElementById('item4-nr2').value = '';
